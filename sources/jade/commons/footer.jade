@@ -1,0 +1,25 @@
+//-
+//- jade код для чанка footer
+//-
+//- Тэги: 
+//-
+footer.js
+  .footer
+    a(href="#").logo.col.js(data-delay="500", data-treshold="-350")
+      img(src="assets/img/logo.png")
+    .info.col.js(data-delay="600", data-treshold="-350")
+      p <b>ИП</b> Иван И. И.
+      p <b>ОГРНИП</b> 389147252323
+      p <b>ИНН</b> 324290348239
+    .menu.col.js(data-delay="700", data-treshold="-350")
+      ul
+        li: a(href="#") Номинации
+        li: a(href="#") Участие
+        li: a(href="#") Оплата
+        li: a(href="#") Правила
+    .contacts.col.js(data-delay="800", data-treshold="-350")
+      p По любым вопросам:
+      a.mail(href="mailto:otkritie@yandex.ru") otkritie@yandex.ru
+      a.tel(href="tel:+78243895443") +7 824 389 54 43
+      
+script(src="js/build.js")

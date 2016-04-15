@@ -1,0 +1,28 @@
+.new-font(@fontname, @filename, @weight: normal){
+  @font-face {
+    font-family: @fontname;
+    font-weight: @weight;
+    font-style: normal;
+
+    src: url('@{fontFolder}@{filename}.eot');
+    src: url('@{fontFolder}@{filename}.eot?#iefix') format('embedded-opentype'),
+    url('@{fontFolder}@{filename}.woff2') format('woff2'),
+    url('@{fontFolder}@{filename}.woff') format('woff'),
+    url('@{fontFolder}@{filename}.ttf') format('truetype'),
+    url('@{fontFolder}@{filename}.svg#@{fontname}') format('svg');
+  }
+}
+
+/*
+*   Пример:
+*
+*   .new-font(@baseFontFamily, 'mcvpt701-webfont', 100);
+*   .new-font(@baseFontFamily, 'lz4u7v4l-webfont', 900);
+*   .new-font(@baseFontFamily, 'ty2g7vvj-webfont', 400);
+*   .new-font(@baseFontFamily, 'z0ecfznz-webfont', 600);
+*
+*   .new-font(@icons, 'icons/icomoon', 100);
+*
+*/
+
+.new-font(@font-icons, 'icomoon-webfont', 'normal');
